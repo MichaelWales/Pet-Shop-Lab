@@ -21,3 +21,7 @@ end
 def stock_count(pet_shop)
   pet_shop[:pets].length
 end
+
+def pets_by_breed(pet_shop, breed)
+  pets = []
+end
