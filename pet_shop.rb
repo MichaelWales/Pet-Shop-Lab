@@ -1,17 +1,17 @@
 def pet_shop_name(pet_shop)
-  return pet_shop[:name]
+  pet_shop[:name]
 end
 
 def total_cash(pet_shop)
-  return pet_shop[:admin][:total_cash]
+  pet_shop[:admin][:total_cash]
 end
 
 def add_or_remove_cash(pet_shop, cash)
-  return pet_shop[:admin][:total_cash] = pet_shop[:admin][:total_cash] + cash
+  pet_shop[:admin][:total_cash] = pet_shop[:admin][:total_cash] + cash
 end
 
 def pets_sold(pet_shop)
-  return pet_shop[:admin][:pets_sold]
+  pet_shop[:admin][:pets_sold]
 end
 
 def increase_pets_sold(pet_shop, pet_sales)
@@ -23,5 +23,11 @@ def stock_count(pet_shop)
 end
 
 def pets_by_breed(pet_shop, breed)
-  pets = []
+  total_breed = []
+  for pet in pet_shop[:pets]
+    if pet[:breed] == breed
+      total_breed << 1
+    end
+  end
+  return total_breed
 end
