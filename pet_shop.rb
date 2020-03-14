@@ -64,3 +64,10 @@ end
 def remove_customer_cash(customer, removed_cash)
   customer[:cash] = customer[:cash] - removed_cash
 end
+
+def customer_pet_count(customer)
+      if customer[:pets] == nil
+        return customer[:pets]
+      end
+  return nil.to_i
+end
