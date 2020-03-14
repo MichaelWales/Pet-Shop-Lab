@@ -60,3 +60,7 @@ def customer_cash(customer)
   end
   return nil
 end
+
+def remove_customer_cash(customer, removed_cash)
+  customer[:cash] = customer[:cash] - removed_cash
+end
